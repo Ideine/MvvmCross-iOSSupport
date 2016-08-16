@@ -25,9 +25,12 @@
             base.ViewDidLoad();
 
             var label = new UILabel();
+			var button = new UIButton ();
+
 
             var bindingSet = this.CreateBindingSet<LeftPanelView, LeftPanelViewModel>();
             bindingSet.Bind(label).To(vm => vm.ExampleValue);
+			//bindingSet.Bind (button).To (vm => vm.Gotocommmand);
             bindingSet.Apply();
 
             Add(label);
@@ -36,9 +39,9 @@
 
             View.AddConstraints(
 
-                label.WithSameHeight(View),
-                label.WithSameCenterX(View),
-                label.WithSameCenterY(View)
+				label.WithSameHeight(View),
+				label.WithSameCenterX(View),
+				label.WithSameCenterY(View)
 
                 );
         }

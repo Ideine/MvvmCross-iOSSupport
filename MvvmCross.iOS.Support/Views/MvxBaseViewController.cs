@@ -57,7 +57,7 @@
         /// <returns></returns>
         public virtual bool HandlesKeyboardNotifications()
         {
-            return false;
+            return true;
         }
 
         private NSObject _keyboardShowObserver;
