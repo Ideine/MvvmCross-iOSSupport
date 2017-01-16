@@ -12,7 +12,7 @@ namespace MvvmCross.iOS.Support.XamarinSidebar
 {
     public class MvxSidebarPresenter : MvxIosViewPresenter, IMvxSideMenu
     {
-        protected virtual MvxSidebarPanelController SidebarPanelController { get; private set;}
+        protected virtual MvxSidebarPanelController SidebarPanelController { get; set;}
 
         public MvxSidebarPresenter(IUIApplicationDelegate applicationDelegate, UIWindow window)
             : base(applicationDelegate, window)
